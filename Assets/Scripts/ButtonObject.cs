@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ButtonObject : MonoBehaviour
 {
-    //public int buttonIndex = 0;
     public string message = "";
+    public string tooltipText = "";
+    public string wasntPressedMessage = "";
 
     public bool needToPress = false;
     public bool wasPressed = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
