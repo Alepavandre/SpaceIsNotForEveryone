@@ -8,6 +8,10 @@ public class ButtonObject : MonoBehaviour
     public string tooltipText = "";
     public string wasntPressedMessage = "";
 
+    public string messageRu = "";
+    public string tooltipTextRu = "";
+    public string wasntPressedMessageRu = "";
+
     public bool needToPress = false;
     public bool wasPressed = false;
 

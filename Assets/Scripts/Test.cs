@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Test : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class Test : MonoBehaviour
 
     public ButtonObject bigRedButton;
     public GameObject light;
+
+    public Image target;
+
+    private bool lastChance = false;
 
     void Start()
     {
@@ -88,6 +93,8 @@ public class Test : MonoBehaviour
                     hitted.wasPressed = true;
                     hitted.needToPress = false;
                     isDisaster = false;
+                    vertBlocks.transform.GetChild(indexLine).GetChild(0).GetComponent<Text>().color = Color.green;
+                    target.color = Color.green;
                     return;
                 }
 
@@ -107,7 +114,15 @@ public class Test : MonoBehaviour
             if (hitted != null)
             {
                 tooltip.SetActive(true);
-                tooltipText.text = hitted.tooltipText;
+                if (DataManager.Instance.eng)
+                {
+                    tooltipText.text = hitted.tooltipText;
+                }
+                else
+                {
+                    tooltipText.text = hitted.tooltipTextRu;
+                }
+                
                 return;
             }
             tooltip.SetActive(false);
@@ -116,11 +131,25 @@ public class Test : MonoBehaviour
 
     private IEnumerator TimerFirst()
     {
-        textFirst.text = "Обнаружено новое подключение!";
+        if (DataManager.Instance.eng)
+        {
+            textFirst.text = "New entry detected!";
+        }
+        else
+        {
+            textFirst.text = "Обнаружено новое подключение!";
+        }
         yield return new WaitForSeconds(3);
         for (int i = 0; i < 3; i++)
         {
-            textFirst.text = "Загрузка";
+            if (DataManager.Instance.eng)
+            {
+                textFirst.text = "Loading";
+            }
+            else
+            {
+                textFirst.text = "Загрузка";
+            }
             for (int j = 0; j <= 3; j++)
             {
                 yield return new WaitForSeconds(0.5f);
@@ -133,20 +162,45 @@ public class Test : MonoBehaviour
 
     private IEnumerator TimerToLose()
     {
+        target.color = Color.red;
         Transform currentLine = vertBlocks.transform.GetChild(indexLine);
         Text currentMessage = currentLine.GetChild(0).GetComponent<Text>();
         Text currentTimer = currentLine.GetChild(1).GetComponent<Text>();
+        currentMessage.color = Color.red;
         currentMessage.text = message;
-        currentTimer.text = "10 сек";
+        if (DataManager.Instance.eng)
+        {
+            currentTimer.text = "10 sec";
+        }
+        else
+        {
+            currentTimer.text = "10 сек";
+        }
         for (int j = 0; j < 10; j++)
         {
             yield return new WaitForSeconds(1);
-            currentTimer.text = (9 - j).ToString() + " сек";
+            if (DataManager.Instance.eng)
+            {
+                currentTimer.text = (9 - j).ToString() + " sec";
+            }
+            else
+            {
+                currentTimer.text = (9 - j).ToString() + " сек";
+            }
         }
         if (isDisaster)
         {
-            currentMessage.text = currentButton.wasntPressedMessage;
-            currentTimer.text = "Err сек";
+            if (DataManager.Instance.eng)
+            {
+                currentMessage.text = currentButton.wasntPressedMessage;
+                currentTimer.text = "Err sec";
+            }
+            else
+            {
+                currentMessage.text = currentButton.wasntPressedMessageRu;
+                currentTimer.text = "Err сек";
+            }
+                
             ErrorButton();
         }
         NewDisaster();
@@ -160,23 +214,26 @@ public class Test : MonoBehaviour
 
     private void CheckErrors()
     {
-        if (errorsCount > errorsCountMax)
+        if (errorsCount > errorsCountMax && !lastChance)
         {
-            StopAllCoroutines();
+            StopCoroutine("TimerToLose");
             StartCoroutine("TimerToGameOver");
         }
     }
 
     private IEnumerator GameOver()
     {
+        //StopCoroutine("TimerToGameOver");
         screenFader.fadeState = ScreenFader.FadeState.In;
         yield return new WaitForSeconds(2f);
         gameOverObject.SetActive(true);
         screenFader.fadeState = ScreenFader.FadeState.OutEnd;
+        SceneManager.LoadScene(0);
     }
 
     private IEnumerator TimerToGameOver()
     {
+        lastChance = true;
         light.SetActive(false);
         isDisaster = true;
         NextLine();
@@ -199,21 +256,36 @@ public class Test : MonoBehaviour
             currentMessage.text = currentButton.wasntPressedMessage;
             currentTimer.text = "Err сек";
             StartCoroutine("GameOver");
+            yield return null;
         }
+        lastChance = false;
         light.SetActive(true);
         NewDisaster();
     }
 
     public void NewDisaster()
     {
-        StopCoroutine("TimerToGameOver");
+        //StopCoroutine("TimerToGameOver");
+        if (lastChance)
+        {
+            return;
+        }
         isDisaster = true;
         NextLine();
         int n = Random.Range(0, buttons.Length);
         currentButton = buttons[n];
         currentButton.needToPress = true;
         currentButton.wasPressed = false;
-        message = currentButton.message;
+        if (DataManager.Instance.eng)
+        {
+
+            message = currentButton.message;
+        }
+        else
+        {
+
+            message = currentButton.messageRu;
+        }
         StartCoroutine("TimerToLose");
     }
 

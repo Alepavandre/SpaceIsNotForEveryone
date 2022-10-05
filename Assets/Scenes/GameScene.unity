@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0018284579, g: 0, b: 0.012288222, a: 1}
+  m_IndirectSpecularColor: {r: 0.018399857, g: 0, b: 0.038257893, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5283019, g: 0.04283241, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1317,6 +1317,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709240213}
   m_CullTransparentMesh: 1
+--- !u!1 &715852879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 715852880}
+  m_Layer: 0
+  m_Name: TorSpace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &715852880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715852879}
+  m_LocalRotation: {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 979.48, y: 1.6, z: 0}
+  m_LocalScale: {x: 500, y: 500, z: 500}
+  m_Children:
+  - {fileID: 1018108356}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &729053265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,7 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1936,6 +1967,7 @@ MonoBehaviour:
   tooltip: {fileID: 699856750}
   bigRedButton: {fileID: 8781377378058896309}
   light: {fileID: 2008549318}
+  target: {fileID: 64099071}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,6 +1985,120 @@ MonoBehaviour:
   fadeSpeed: 1
   fromInDelay: 0
   fromOutDelay: 0
+--- !u!1001 &1018108355
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 715852880}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa85da2cf099112488cb86ea2eae5728, type: 2}
+    - target: {fileID: 919132149155446097, guid: 129e90469612fd04da69022728422486, type: 3}
+      propertyPath: m_Name
+      value: TorusSpace_SubS
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 129e90469612fd04da69022728422486, type: 3}
+--- !u!4 &1018108356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 129e90469612fd04da69022728422486, type: 3}
+  m_PrefabInstance: {fileID: 1018108355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1018108357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 129e90469612fd04da69022728422486, type: 3}
+  m_PrefabInstance: {fileID: 1018108355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1018108358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018108357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615418bad13235843bc169f0992f2b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.3
+  material: {fileID: 2100000, guid: 7fe65c19be7748442ab07d91acbce5b3, type: 2}
+  delay: 0.1
+--- !u!54 &1018108359
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018108357}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1069174347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,7 +2450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2383,7 +2529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2539,7 +2685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2618,7 +2764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2697,7 +2843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2776,7 +2922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3001,7 +3147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3152,7 +3298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3596,8 +3742,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.8066038, g: 0.83107024, b: 1, a: 1}
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3711,7 +3857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3800627, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.15686275, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3947,6 +4093,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &74422512963887446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8250384641561960177, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+  m_PrefabInstance: {fileID: 8320162816587906983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74422512963887447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74422512963887446}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda357deed0e55e449bb8b2fbe3b9d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eng: {fileID: 2100000, guid: 4504b7e65adfabb4ab2f063e6eec2890, type: 2}
+  rus: {fileID: 2100000, guid: f1e246a7beafa414b82dd01cb69d53ff, type: 2}
 --- !u!1001 &8267061557929380976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3954,14 +4119,274 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1351824291032064445, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Shut off the water supply!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351824291032064445, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u041F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C \u043F\u043E\u0434\u0430\u0447\u0443
+        \u0432\u043E\u0434\u044B!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351824291032064445, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Pump shutdown
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351824291032064445, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u041E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043D\u0430\u0441\u043E\u0441\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351824291032064445, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: The water tank is full!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351824291032064445, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0420\u0435\u0437\u0435\u0440\u0432\u0443\u0430\u0440 \u0432\u043E\u0434\u044B
+        \u043F\u0435\u0440\u0435\u043F\u043E\u043B\u043D\u0435\u043D!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520027797592802171, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Water the valuable sample!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520027797592802171, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u041D\u0430\u043F\u043E\u0438\u0442\u0435 \u0446\u0435\u043D\u043D\u044B\u0439
+        \u043E\u0431\u0440\u0430\u0437\u0435\u0446"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520027797592802171, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Water for a cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520027797592802171, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u0412\u043E\u0434\u0430 \u0434\u043B\u044F \u043A\u043E\u0442\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520027797592802171, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: Valuable sample is dehydrated!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520027797592802171, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0426\u0435\u043D\u043D\u044B\u0439 \u043E\u0431\u0440\u0430\u0437\u0435\u0446
+        \u043E\u0431\u0435\u0437\u0432\u043E\u0436\u0435\u043D!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861508935449207849, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: There's not enough fuel in the reactor!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861508935449207849, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u0412 \u0440\u0435\u0430\u043A\u0442\u043E\u0440\u0435 \u043C\u0430\u043B\u043E
+        \u0442\u043E\u043F\u043B\u0438\u0432\u0430!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861508935449207849, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Open the fuel valve
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861508935449207849, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0442\u043E\u043F\u043B\u0438\u0432\u043D\u044B\u0439
+        \u043A\u043B\u0430\u043F\u0430\u043D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861508935449207849, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: Reactor operation is disrupted!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861508935449207849, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0440\u0435\u0430\u043A\u0442\u043E\u0440\u0430
+        \u043D\u0430\u0440\u0443\u0448\u0435\u043D\u0430!"
+      objectReference: {fileID: 0}
     - target: {fileID: 3809439547908528802, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 65b147e34450e47409a29536ddd72272, type: 2}
+    - target: {fileID: 4157864867871870100, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Feed valuable sample!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157864867871870100, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u041D\u0430\u043A\u043E\u0440\u043C\u0438\u0442\u0435 \u0446\u0435\u043D\u043D\u044B\u0439
+        \u043E\u0431\u0440\u0430\u0437\u0435\u0446!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157864867871870100, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Food for a cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157864867871870100, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u0415\u0434\u0430 \u0434\u043B\u044F \u043A\u043E\u0442\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157864867871870100, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: Valuable sample is hungry!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157864867871870100, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0426\u0435\u043D\u043D\u044B\u0439 \u043E\u0431\u0440\u0430\u0437\u0435\u0446
+        \u0433\u043E\u043B\u043E\u0434\u0430\u0435\u0442!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166787783796652875, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: The batteries are empty!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166787783796652875, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u0410\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440\u044B
+        \u0440\u0430\u0437\u0440\u044F\u0436\u0435\u043D\u044B!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166787783796652875, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Battery charger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166787783796652875, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u0417\u0430\u0440\u044F\u0434\u043A\u0430 \u0430\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440\u043E\u0432"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166787783796652875, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: Gravistory calibrator does not function!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166787783796652875, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0413\u0440\u0430\u0432\u0438\u0441\u0442\u043E\u0440\u043D\u044B\u0439
+        \u043A\u043E\u043B\u043B\u0438\u0431\u0440\u0430\u0442\u043E\u0440 \u043D\u0435
+        \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0438\u0440\u0443\u0435\u0442!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813221990335651128, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Close the air supply valve!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813221990335651128, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u043A\u043B\u0430\u043F\u0430\u043D
+        \u043F\u043E\u0434\u0430\u0447\u0438 \u0432\u043E\u0437\u0434\u0443\u0445\u0430!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813221990335651128, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Close the air valve
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813221990335651128, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u0432\u043E\u0437\u0434\u0443\u0448\u043D\u044B\u0439
+        \u043A\u043B\u0430\u043F\u0430\u043D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813221990335651128, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: Oxygen oversaturation!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813221990335651128, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u041F\u0435\u0440\u0435\u043D\u0430\u0441\u044B\u0449\u0435\u043D\u0438\u0435
+        \u043A\u0438\u0441\u043B\u043E\u0440\u043E\u0434\u043E\u043C!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343922408129377448, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Batteries overheated
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343922408129377448, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u0410\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440\u044B
+        \u043F\u0435\u0440\u0435\u0433\u0440\u0435\u043B\u0438\u0441\u044C!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343922408129377448, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Battery cooling
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343922408129377448, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u041E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u0435 \u0430\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440\u043E\u0432"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343922408129377448, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: The wiring is hot!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343922408129377448, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u041F\u0440\u043E\u0432\u043E\u0434\u043A\u0430 \u043D\u0430\u043A\u0430\u043B\u0438\u043B\u0430\u0441\u044C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: SYSTEM FAILURE!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u041E\u0442\u043A\u0430\u0437 \u0441\u0438\u0441\u0442\u0435\u043C\u044B!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Big RED BUTTON
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u0440\u0430\u0441\u043D\u0430\u044F
+        \u043A\u043D\u043E\u043F\u043A\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: SYSTEM CRASH!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u043D\u0435 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492869398667568590, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: The reactor overheated!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492869398667568590, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u0420\u0435\u0430\u043A\u0442\u043E\u0440 \u043F\u0435\u0440\u0435\u0433\u0440\u0435\u043B\u0441\u044F!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492869398667568590, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Reactor cooling
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492869398667568590, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u041E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u0435 \u0440\u0435\u0430\u043A\u0442\u043E\u0440\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492869398667568590, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: The reactor is about to explode!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492869398667568590, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0420\u0435\u0430\u043A\u0442\u043E\u0440 \u0432\u043E\u0442-\u0432\u043E\u0442
+        \u0432\u0437\u043E\u0440\u0432\u0451\u0442\u0441\u044F!"
+      objectReference: {fileID: 0}
     - target: {fileID: 7205578387225629271, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 65b147e34450e47409a29536ddd72272, type: 2}
+    - target: {fileID: 7791467155008506612, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Open the air supply valve!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791467155008506612, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u043A\u043B\u0430\u043F\u0430\u043D
+        \u043F\u043E\u0434\u0430\u0447\u0438 \u0432\u043E\u0437\u0434\u0443\u0445\u0430!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791467155008506612, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Open the air valve
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791467155008506612, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0432\u043E\u0437\u0434\u0443\u0448\u043D\u044B\u0439
+        \u043A\u043B\u0430\u043F\u0430\u043D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791467155008506612, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: Lack of oxygen!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791467155008506612, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u041D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043A\u0438\u0441\u043B\u043E\u0440\u043E\u0434\u0430!"
+      objectReference: {fileID: 0}
     - target: {fileID: 8267061557591267270, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -3996,7 +4421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4004,7 +4429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.13052616
       objectReference: {fileID: 0}
     - target: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4016,11 +4441,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468422854046768107, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: message
+      value: Open the water supply!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468422854046768107, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: messageRu
+      value: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u043F\u043E\u0434\u0430\u0447\u0443
+        \u0432\u043E\u0434\u044B!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468422854046768107, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipText
+      value: Switching on the pump
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468422854046768107, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: tooltipTextRu
+      value: "\u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043D\u0430\u0441\u043E\u0441\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468422854046768107, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessage
+      value: The water is boiling!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468422854046768107, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+      propertyPath: wasntPressedMessageRu
+      value: "\u0412\u043E\u0434\u0430 \u0432\u0441\u043A\u0438\u043F\u0435\u043B\u0430!"
       objectReference: {fileID: 0}
     - target: {fileID: 9114134998857836818, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
       propertyPath: m_Name
@@ -4037,6 +4487,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3932596544173157483, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
   m_PrefabInstance: {fileID: 8267061557929380976}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &8267061557929380978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8444312878568190888, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
+  m_PrefabInstance: {fileID: 8267061557929380976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8320162816587906983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8267061557929380978}
+    m_Modifications:
+    - target: {fileID: 7602002977411055396, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f2b8b324c6051b4dab54f9b7ca20098, type: 2}
+    - target: {fileID: 8250384641561960177, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_Name
+      value: Decals
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733765774928495691, guid: e82a0c962872f59498a32acd1088a946, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e82a0c962872f59498a32acd1088a946, type: 3}
 --- !u!114 &8781377378058896309 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6427947924179440646, guid: 42fe9432830b70d4d84234b3f51b03dc, type: 3}
